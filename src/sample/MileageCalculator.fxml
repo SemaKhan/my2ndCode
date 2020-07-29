@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="milesLabel" alignment="CENTER" layoutX="48.0" layoutY="42.0" prefHeight="30.0" prefWidth="99.0" text="Miles(100):" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="80.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #1B6CD7;" text="Gas Used" textAlignment="CENTER" textFill="#e80b0b">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Slider fx:id="milesSlider" layoutX="147.0" layoutY="49.0" prefHeight="15.0" prefWidth="410.0" />
+      <TextField fx:id="gasTextField" layoutX="157.0" layoutY="82.0" />
+      <Button fx:id="calculateButton" layoutX="471.0" layoutY="225.0" mnemonicParsing="false" onAction="#calculateMPG" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #1B6CD7;" text="Calculate " textFill="#c22c11" />
+      <Label fx:id="ResultLabel" alignment="CENTER" layoutX="158.0" layoutY="121.0" prefHeight="30.0" prefWidth="99.0" text=" **.........................**" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="176.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #1B6CD7;" text="Gas  Price" textAlignment="CENTER" textFill="#f20b0b">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="gasPrice" layoutX="157.0" layoutY="176.0" prefHeight="30.0" prefWidth="149.0" />
+      <Label fx:id="totalCost" layoutX="158.0" layoutY="216.0" prefHeight="30.0" prefWidth="99.0" text=" **..........................**" />
+      <Label alignment="CENTER" layoutX="43.0" layoutY="124.0" prefHeight="25.0" prefWidth="99.0" text="Miles PG" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="219.0" prefHeight="25.0" prefWidth="99.0" text="Total GP" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
